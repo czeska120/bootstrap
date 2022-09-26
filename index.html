@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <style>
+            h1,h2,h3 {
+                font-family:Rockwell;
+                margin-left: 10px;
+            }
+
+            body {
+                font-family:Bahnschrift;
+                margin-left: 18px;
+                background-color:rgb(235, 230, 198)
+            }
+
+            p {
+                margin-left: 25px;
+            }
+
+            .logoIMG{
+                width: 50%;
+                margin: auto;
+            }
+
+            .carousel-inner{
+                max-width: 200px;
+            }
+
+            span {
+                background-color: rgb(111, 50, 45);
+                padding:4px;border-radius:7px;
+                color: bisque;
+            }
+
+            .rectangle {
+                height: 50px;
+                width: 145px;
+                background-color: rgb(111, 50, 45);
+                border-radius: 10px;
+                position:relative;
+                left:10px;
+                bottom:25px;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+            }
+
+            .verticalLine {
+                height: 700px;
+                border-left-style: double;
+                position: absolute;
+                padding: 10px;
+                left:250px;
+            }
+            
+        </style>
+        <div class="rectangle">
+        </div>
+        <title>FM's Biography</title>
+        
+    </head>
+    <body>
+        <div style=display:inline-block>
+
+            <img src="anya.jpg" width="200" height="200" alt="picture of Anya, a character from the Spy X Family">
+            <h3 style="text-align:center"><i>Languages</i></h3>
+            <h1 style="text-align:center;color:rgb(111,50,45);position:relative;bottom:25px">LEARNT</h1>
+            <hr style="position:relative;bottom:30px">
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Languages here!
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/java/" target="_blank">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/sql-tutorial/" target="_blank">MySQL</a></li>
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/php-tutorials/" target="_blank">PHP</a></li>
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/html/" target="_blank">HTML</a></li>
+                  <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/xml-basics/" target="_blank">XML</a></li>
+                </ul>
+            </div>
+
+            <hr style="position:relative;top:20px">
+            <h3 style="text-align:center"><i>Find me here!</i></h3>
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="facebook.png" class="d-block w-5 logoIMG" alt="FB"></a>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="linkedin.png" class="d-block w-5 logoIMG" alt="LinkedIn"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://twitter.com/?lang=en" target="_blank" title="Twitter"><img src="twitter.png" class="d-block w-5 logoIMG" alt="Twitter"></a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="verticalLine" style="display:inline-block">
+            <h1 style="font-size:60px;margin-top:-25px">Hello, <small class="text-muted">Biography reader!</small></h1>
+            
+            <p>I'm FM, and here's a little bit about me:</p>
+            <ul>
+                <li>Student in <b>De La Salle University-Manila</b><i> (2020 - present)</i></li>
+                <li>Currently enrolled in BS in Information Technology</li>
+                <li>Interested in anything tech, but most especially Data Science</li>
+            </ul>
+            <h3><span>Favorite Subjects</span></h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Literature
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Literature is a form of human expression.</strong> But not everything expressed in words—even when organized and written down—is counted as literature. </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Art Appreciation
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Art appreciation is the knowledge and understanding</strong>  of the universal and timeless qualities that identify all great art. The more you appreciate and understand the art of different eras, movements, styles and techniques, the better you can develop, evaluate and improve your own artwork. </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Science
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Science is the intellectual and practical activity</strong> encompassing the systematic study of the structure and behaviour of the physical and natural world through observation and experiment.</div>
+                  </div>
+                </div>
+              </div>
+            </br>
+            <h3><span>Hobbies</span></h3>
+            <ul>
+                <li>Bingewatching movies on <a href="https://www.netflix.com/" target="_blank" title="Netflix" style="color:rgb(130, 23, 13) ">Netflix</a></li>
+                <li>Surfing through <a href="https://open.spotify.com/" target="_blank" title="Spotify" style="color:rgb(40, 70, 40)">Spotify</a> playlists</li>
+                <li>Drawing (traditionally & digitally)</li>
+            </ul>
+        </div>
+
+    
+    </body>
+</html>
